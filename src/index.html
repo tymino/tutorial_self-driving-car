@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="style.css" />
     <script src="network.js" defer></script>
+    <script src="visualizer.js" defer></script>
     <script src="utils.js" defer></script>
     <script src="sensor.js" defer></script>
     <script src="road.js" defer></script>
@@ -17,6 +18,11 @@
     <title>Self-driving car - No Libraries</title>
   </head>
   <body>
-    <canvas id="myCanvas"></canvas>
+    <canvas id="carCanvas"></canvas>
+    <div id="verticalButtons">
+      <button onclick="save()">💾</button>
+      <button onclick="discard()">🗑️</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
   </body>
 </html>
